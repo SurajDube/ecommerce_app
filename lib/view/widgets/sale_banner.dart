@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/utils/app_text_styles.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SaleBanner extends StatelessWidget {
@@ -40,7 +39,6 @@ class SaleBanner extends StatelessWidget {
           ),
           ElevatedButton(
               onPressed: (){
-
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,

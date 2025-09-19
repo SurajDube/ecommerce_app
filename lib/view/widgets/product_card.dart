@@ -6,7 +6,6 @@ class ProductCard extends StatelessWidget {
   final Product product;
   const ProductCard({super.key, required this.product});
 
-
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -76,7 +75,7 @@ class ProductCard extends StatelessWidget {
                     child: Text(
                       '${calculateDiscount(
                           product.price,
-                          product.oldPrice!)} % OFF',
+                          product.oldPrice!)}% OFF',
                       style: AppTextStyles.withColor(
                           AppTextStyles.withWeight(
                               AppTextStyles.bodySmall,
