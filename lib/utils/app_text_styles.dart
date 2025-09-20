@@ -58,7 +58,4 @@ static TextStyle withColor(TextStyle style,Color color){
 static TextStyle withWeight(TextStyle style,FontWeight weight){
   return style.copyWith(fontWeight: weight);
 }
-
-
-
 }

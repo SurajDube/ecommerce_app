@@ -146,17 +146,6 @@ class SignUpScreen extends StatelessWidget {
                         style: AppTextStyles.withColor(
                           AppTextStyles.bodyMedium,
                           Theme.of(context).primaryColor,
-
-
-
-
-
-
-
-
-
-
-
                         ),
                       ),
                     ),
