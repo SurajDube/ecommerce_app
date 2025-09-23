@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
 import 'package:ecommerce_app/utils/app_text_styles.dart';
+import 'package:ecommerce_app/view/setting_screen.dart';
 import 'package:ecommerce_app/view/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -22,7 +23,7 @@ class AccountScreen extends StatelessWidget {
         ),
         actions: [
           IconButton(
-              onPressed: (){},
+              onPressed: () =>Get.to(() => const SettingScreen()),
               icon: Icon(
                 Icons.settings_outlined,
                 color: isDark ? Colors.white : Colors.black,
