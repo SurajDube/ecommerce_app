@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
 import 'package:ecommerce_app/features/my%20orders/view/screens/my_orders_screen.dart';
+import 'package:ecommerce_app/features/shippingAddress/shipping_address_screen.dart';
 import 'package:ecommerce_app/utils/app_text_styles.dart';
 import 'package:ecommerce_app/view/setting_screen.dart';
 import 'package:ecommerce_app/view/signin_screen.dart';
@@ -147,7 +148,7 @@ class AccountScreen extends StatelessWidget {
                     Get.to(()=> MyOrdersScreen());
                   }
                   else if (item['title'] == 'Shipping Address'){
-                    // navigation to Shipping Address
+                    Get.to(()=> ShippingAddressScreen());
 
                   }
                   else if (item['title'] == 'Help Center'){
