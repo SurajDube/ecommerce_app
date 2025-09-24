@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
+import 'package:ecommerce_app/features/editProfile/views/screen/edit_profile_screen.dart';
 import 'package:ecommerce_app/features/my%20orders/view/screens/my_orders_screen.dart';
 import 'package:ecommerce_app/features/shippingAddress/shipping_address_screen.dart';
 import 'package:ecommerce_app/utils/app_text_styles.dart';
@@ -77,7 +78,7 @@ class AccountScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           OutlinedButton(
-              onPressed: (){},
+              onPressed: () => Get.to(()=> const EditProfileScreen()),
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12,),
               side: BorderSide(
@@ -153,7 +154,6 @@ class AccountScreen extends StatelessWidget {
                   }
                   else if (item['title'] == 'Help Center'){
                     // navigation to Help Center
-
                   }
                 },
               ),
