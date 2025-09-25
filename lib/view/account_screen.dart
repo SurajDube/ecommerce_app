@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/controllers/auth_controller.dart';
 import 'package:ecommerce_app/features/editProfile/views/screen/edit_profile_screen.dart';
+import 'package:ecommerce_app/features/help%20center/views/screen/help_center_screen.dart';
 import 'package:ecommerce_app/features/my%20orders/view/screens/my_orders_screen.dart';
 import 'package:ecommerce_app/features/shippingAddress/shipping_address_screen.dart';
 import 'package:ecommerce_app/utils/app_text_styles.dart';
@@ -150,10 +151,9 @@ class AccountScreen extends StatelessWidget {
                   }
                   else if (item['title'] == 'Shipping Address'){
                     Get.to(()=> ShippingAddressScreen());
-
                   }
                   else if (item['title'] == 'Help Center'){
-                    // navigation to Help Center
+                    Get.to(()=> const HelpCenterScreen());
                   }
                 },
               ),
