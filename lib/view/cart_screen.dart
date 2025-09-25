@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/features/checkout/screens/checkout_screen.dart';
 import 'package:ecommerce_app/models/product.dart';
 import 'package:ecommerce_app/utils/app_text_styles.dart';
 import 'package:flutter/material.dart';
@@ -305,9 +306,7 @@ Widget _buildCartSummary (BuildContext context){
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-                onPressed: (){
-                  // navigate to check out screen
-                },
+                onPressed: () => Get.to(() => const CheckoutScreen()),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Theme.of(context).primaryColor,
                 padding: const EdgeInsets.symmetric(vertical: 16),
