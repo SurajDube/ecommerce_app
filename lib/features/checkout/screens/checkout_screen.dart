@@ -55,7 +55,7 @@ appBar: AppBar(
         onPlaceOrder: (){
           // generate a random order number (in real app, this would come from backend)
           final orderNumber = 'ORD${DateTime.now().microsecondsSinceEpoch.toString().substring(7)}';
-          Get.to(() => const OrderConfirmationScreen());
+          Get.to(() => OrderConfirmationScreen(orderNumber: orderNumber, totalAmount: 662.23));
         },
       ),
     );
